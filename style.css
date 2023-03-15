@@ -1,0 +1,21 @@
+.bc-gr {
+    background: linear-gradient(315deg, rgba(3, 169, 244, 0.5), rgba(255, 0, 88, 0.5));
+    box-shadow: 0 0 30px black;
+}
+
+.banner-image {
+    background-image: url('images/coffee.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: auto;
+}
+
+@media(max-width:991.27px) {
+    .banner-image {
+        background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url('images/coffee.jpg');
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: auto;
+    }
+}
+
