@@ -15,10 +15,8 @@
 // alert ("your drink is getting prepared !");
 // console.log( "Name: "+ Name +'\n'+ "DrinkName: " + DrinkName);
 
-let answers = [];
 
 let nameuser = prompt("What is your name ?");
-
 function userGender(){
     let gender = prompt("Plz', enter your gender (male/female)");
     while(gender != "male" && gender != "female") {
@@ -30,7 +28,7 @@ function userGender(){
 let gender = userGender();
 let drink = prompt("Do you want to drink (hot or cold) ?");
 let drinkName = prompt("what kind of drink would you like ?");
-
+let answers = [];
 answers.push(nameuser, gender, drink, drinkName);
 
 for(let i = 0; i < answers.length ; i++) {
