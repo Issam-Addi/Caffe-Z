@@ -17,16 +17,16 @@
 
 let answers = [];
 
-let name = prompt("What is your name ?");
+let nameuser = prompt("What is your name ?");
 
-let gender = '';
+let gender = prompt("Plz', enter your gender (male/female)");
 while(gender != "male" && gender != "female") {
-    gender = prompt("Plz', enter your gender (male/female)");
+    gender = prompt("Plz', enter your gender (male/female) again");
 }
 let drink = prompt("Do you want to drink (hot or cold) ?");
 let drinkName = prompt("what kind of drink would you like ?");
 
-answers.push(name, gender, drink, drinkName);
+answers.push(nameuser, gender, drink, drinkName);
 
 for(let i = 0; i < answers.length ; i++) {
     console.log(answers[i]);
