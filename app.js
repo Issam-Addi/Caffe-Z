@@ -1,36 +1,23 @@
-// let Name = prompt("What is your name ?");
-// let Gender = prompt("Plz, enter your gender (male or female)");
+let userName = prompt("Esnter your name ?!");
+let userGender = prompt("Esnter your gender ?!");
+let userAge = prompt("Esnter your age ?!");
+let drinkType = prompt("Esnter your drinktype(hot/cold) ?!");
+let userDrink = prompt("Esnter your drink ?!");
+let mainCont = document.getElementById("mainBody")
+let maindiv = document.createElement("div");
+let parg = document.createElement("p");
+parg.textContent = userName;
+maindiv.appendChild(parg);
+let unorderList = document.createElement("ul");
+let listItem1 = document.createElement("li");
+listItem1.textContent = `Gender: ${userGender}`;
+let listItem2 = document.createElement("li");
+listItem2.textContent = `Age: ${userAge}`;
+let listItem3 = document.createElement("li");
+listItem3.textContent = `Drink: ${drinkType} ${userDrink}`;
+unorderList.appendChild(listItem1);
+unorderList.appendChild(listItem2);
+unorderList.appendChild(listItem3);
+maindiv.appendChild(unorderList);
+mainCont.appendChild(maindiv);
 
-// if ( Gender == "male") {
-// alert ("Welcome Mr, " +Name +"!");
-// } 
-// else if ( Gender == "female") {
-//     alert ("Welcome Ms, " +Name +"!");
-// }
-// else alert ("Welcome !");
-
-// let Drink = prompt("Do you want to drink (hot or cold) ?");
-// let DrinkName = prompt("what kind of drink would you like ?");
-
-// alert ("your drink is getting prepared !");
-// console.log( "Name: "+ Name +'\n'+ "DrinkName: " + DrinkName);
-
-
-let nameuser = prompt("What is your name ?");
-function userGender(){
-    let gender = prompt("Plz', enter your gender (male/female)");
-    while(gender != "male" && gender != "female") {
-        gender = prompt("Plz', enter your gender (male/female) again");
-        if (gender == "male")
-        return gender;
-    }
-}
-let gender = userGender();
-let drink = prompt("Do you want to drink (hot or cold) ?");
-let drinkName = prompt("what kind of drink would you like ?");
-let answers = [];
-answers.push(nameuser, gender, drink, drinkName);
-
-for(let i = 0; i < answers.length ; i++) {
-    console.log(answers[i]);
-}
